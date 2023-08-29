@@ -9,7 +9,7 @@ export const BtnFeedback = ({ feedbackTypes, handleFeedback }) => {
       {feedbackTypes.map(type => (
         <Item key={type}>
           <Btn onClick={() => handleFeedback(type)}>
-            {type.charAt(0).toUpperCase() + type.slice(1)}
+            {type}
           </Btn>
         </Item>
       ))}
